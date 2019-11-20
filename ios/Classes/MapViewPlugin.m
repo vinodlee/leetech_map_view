@@ -9,7 +9,7 @@
 
 + (void)registerWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar {
     FlutterMethodChannel *channel = [FlutterMethodChannel
-            methodChannelWithName:@"com.apptreesoftware.map_view"
+            methodChannelWithName:@"com.leetech.map_view"
                   binaryMessenger:[registrar messenger]];
     UIViewController *host = UIApplication.sharedApplication.delegate.window.rootViewController;
     MapViewPlugin *instance = [[MapViewPlugin alloc] initWithHost:host channel:channel registrar:registrar];

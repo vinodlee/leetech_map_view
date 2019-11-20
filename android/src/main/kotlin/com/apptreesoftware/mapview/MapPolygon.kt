@@ -1,4 +1,4 @@
-package com.apptreesoftware.mapview
+package com.leetech.mapview
 
 import com.google.android.gms.maps.model.LatLng
 

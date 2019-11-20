@@ -1,4 +1,4 @@
-package com.apptreesoftware.mapview
+package com.leetech.mapview
 
 data class ToolbarAction(val title : String, val identifier: Int) {
     constructor(map: Map<String, Any>)

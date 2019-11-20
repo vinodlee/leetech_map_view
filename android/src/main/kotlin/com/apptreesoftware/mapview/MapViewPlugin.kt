@@ -1,4 +1,4 @@
-package com.apptreesoftware.mapview
+package com.leetech.mapview
 
 import android.app.Activity
 import android.content.Intent
@@ -51,7 +51,7 @@ class MapViewPlugin(val activity: Activity) : MethodCallHandler {
 
         @JvmStatic
         fun registerWith(registrar: Registrar): Unit {
-            channel = MethodChannel(registrar.messenger(), "com.apptreesoftware.map_view")
+            channel = MethodChannel(registrar.messenger(), "com.leetech.map_view")
             val plugin = MapViewPlugin(activity = registrar.activity())
             channel.setMethodCallHandler(plugin)
             this.registrar = registrar

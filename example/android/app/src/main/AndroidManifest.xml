@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.apptreesoftware.mapviewexample">
+    package="com.leetech.mapviewexample">
 
     <!-- The INTERNET permission is required for development. Specifically,
          flutter needs it to communicate with the running application
@@ -37,8 +37,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.apptreesoftware.mapview.MapActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="your-api-key"/>
+        <activity android:name="com.leetech.mapview.MapActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDJRqdKQMMvyEYbl4PIopjdwMplH0txf10"/>
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>

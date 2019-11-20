@@ -1,4 +1,4 @@
-package com.apptreesoftware.mapview
+package com.leetech.mapview
 
 import android.graphics.Color
 import com.google.android.gms.maps.model.LatLng

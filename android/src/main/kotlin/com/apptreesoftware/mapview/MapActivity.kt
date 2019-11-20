@@ -1,4 +1,4 @@
-package com.apptreesoftware.mapview
+package com.leetech.mapview
 
 import android.Manifest
 import android.annotation.SuppressLint

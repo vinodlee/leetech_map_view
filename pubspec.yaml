@@ -2,7 +2,7 @@ name: lee_map_view
 description: A fork of flutter plugin for displaying native Google Maps.
 version: 1.0.0
 author: Leetech <vinoth@vinothmuthu.in>
-homepage:
+homepage: https://github.com/vinodlee/leetech_map_view
 
 dependencies:
   uri: "^0.11.1"
@@ -18,7 +18,7 @@ environment:
 # The following section is specific to Flutter.
 flutter:
   plugin:
-    androidPackage: com.apptreesoftware.mapview
+    androidPackage: com.leetech.mapview
     pluginClass: MapViewPlugin
 
   # To add assets to your plugin package, add an assets section, like this:

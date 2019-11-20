@@ -90,7 +90,7 @@ find this file location under `android/app/src/main`
     ```
 3. Add the MapActivity to your AndroidManifest.xml
     ```xml
-        <activity android:name="com.apptreesoftware.mapview.MapActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.leetech.mapview.MapActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
     ```
 4. In your `android/build.gradle` file. Under `buildScript` `dependencies` add:
     ```groovy
@@ -126,15 +126,15 @@ var uri = staticMapProvider.getImageUriFromMap(mapView,
 ```
   
  
-You can refer to the [example](https://github.com/apptreesoftware/flutter_google_map_view/raw/master/example) project if you run into any issues with these steps.
+You can refer to the [example](https://github.com/leetech/flutter_google_map_view/raw/master/example) project if you run into any issues with these steps.
 
 
 <table>
 <tr><td>
-<img src='https://github.com/apptreesoftware/flutter_google_map_view/raw/master/example/Android_screen.png' width=320/>
+<img src='https://github.com/leetech/flutter_google_map_view/raw/master/example/Android_screen.png' width=320/>
 </td>
 <td>
-<img src='https://github.com/apptreesoftware/flutter_google_map_view/raw/master/example/iOS_Screen.png' width=320/>
+<img src='https://github.com/leetech/flutter_google_map_view/raw/master/example/iOS_Screen.png' width=320/>
 </td>
 </tr>
 </table>

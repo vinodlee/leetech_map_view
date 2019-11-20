@@ -1,10 +1,6 @@
-## [1.0.0] - 15-07-2019
+## [1.0.0] - 19-11-2019
 * Migrating project to AndroidX
 * Update Kotalin version
-* Taken from cirrus_map_view plugin
-
-## [0.0.1] - 19-11-2019
-
 * Full Screen Map Support
 * iOS Support
 * Android Support

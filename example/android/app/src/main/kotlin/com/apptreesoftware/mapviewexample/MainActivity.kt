@@ -1,4 +1,4 @@
-package com.apptreesoftware.mapviewexample
+package com.leetech.mapviewexample
 
 import android.os.Bundle
 

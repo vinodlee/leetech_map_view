@@ -21,7 +21,7 @@ export 'static_map_provider.dart';
 export 'toolbar_action.dart';
 
 class MapView {
-  MethodChannel _channel = const MethodChannel("com.apptreesoftware.map_view");
+  MethodChannel _channel = const MethodChannel("com.leetech.map_view");
   StreamController<Marker> _annotationStreamController =
       new StreamController.broadcast();
   StreamController<Map<Marker, Location>> _annotationDragStartController =
@@ -64,7 +64,7 @@ class MapView {
   static bool _apiKeySet = false;
 
   static void setApiKey(String apiKey) {
-    MethodChannel c = const MethodChannel("com.apptreesoftware.map_view");
+    MethodChannel c = const MethodChannel("com.leetech.map_view");
     c.invokeMethod('setApiKey', apiKey);
     _apiKeySet = true;
   }

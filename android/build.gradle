@@ -1,4 +1,4 @@
-group 'com.apptreesoftware.mapview'
+group 'com.leetech.mapview'
 version '1.0-SNAPSHOT'
 
 buildscript {

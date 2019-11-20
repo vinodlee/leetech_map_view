@@ -11,7 +11,7 @@ import 'package:lee_map_view/polyline.dart';
 /// - Static Maps API
 /// - Android Maps API
 /// - iOS Maps API
-const API_KEY = "GOOGLE_MAP_TOKEN_HERE";
+const API_KEY = "AIzaSyDJRqdKQMMvyEYbl4PIopjdwMplH0txf10";
 
 void main() {
   MapView.setApiKey(API_KEY);
@@ -40,7 +40,7 @@ class _MyAppState extends State<MyApp> {
       color: Colors.blue,
       draggable: true, //Allows the user to move the marker.
       markerIcon: new MarkerIcon(
-        "images/flower_vase.png",
+        "images/markericon.png",
         width: 112.0,
         height: 75.0,
       ),
@@ -48,16 +48,16 @@ class _MyAppState extends State<MyApp> {
   ];
 
   //Line
-  List<Polyline> _lines = <Polyline>[
-    new Polyline(
-        "11",
-        <Location>[
-          new Location(45.52309483308097, -122.67339684069155),
-          new Location(45.52298442915803, -122.66339991241693),
-        ],
-        width: 15.0,
-        color: Colors.blue),
-  ];
+//  List<Polyline> _lines = <Polyline>[
+//    new Polyline(
+//        "11",
+//        <Location>[
+//          new Location(45.52309483308097, -122.67339684069155),
+//          new Location(45.52298442915803, -122.66339991241693),
+//        ],
+//        width: 15.0,
+//        color: Colors.blue),
+//  ];
 
   //Drawing
   List<Polygon> _polygons = <Polygon>[
@@ -145,37 +145,44 @@ class _MyAppState extends State<MyApp> {
                 height: 250.0,
                 child: new Stack(
                   children: <Widget>[
-                    new Center(
-                        child: new Container(
-                      child: new Text(
-                        "You are supposed to see a map here.\n\nAPI Key is not valid.\n\n"
-                            "To view maps in the example application set the "
-                            "API_KEY variable in example/lib/main.dart. "
-                            "\n\nIf you have set an API Key but you still see this text "
-                            "make sure you have enabled all of the correct APIs "
-                            "in the Google API Console. See README for more detail.",
-                        textAlign: TextAlign.center,
-                      ),
-                      padding: const EdgeInsets.all(20.0),
-                    )),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        new Container(
+                          padding: new EdgeInsets.only(top: 30.0),
+                          child: new Text(
+                            "Tap the map to interact",
+                            style: new TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ],
+                    ),
+//                    new Center(
+//                        child: new Container(
+//                      child: new Text(
+//                        "You are supposed to see a map here.\n\nAPI Key is not valid.\n\n"
+//                            "To view maps in the example application set the "
+//                            "API_KEY variable in example/lib/main.dart. "
+//                            "\n\nIf you have set an API Key but you still see this text "
+//                            "make sure you have enabled all of the correct APIs "
+//                            "in the Google API Console. See README for more detail.",
+//                        textAlign: TextAlign.center,
+//                      ),
+//                      padding: const EdgeInsets.all(20.0),
+//                    )),
                     new InkWell(
                       child: new Center(
-                        child: new Image.network(staticMapUri.toString()),
+                        child: Icon(Icons.map,size: 60.0,),
                       ),
                       onTap: showMap,
                     )
                   ],
                 ),
               ),
+
               new Container(
-                padding: new EdgeInsets.only(top: 10.0),
-                child: new Text(
-                  "Tap the map to interact",
-                  style: new TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ),
-              new Container(
-                padding: new EdgeInsets.only(top: 25.0),
+                padding: new EdgeInsets.only(top: 20.0),
                 child:
                     new Text("Camera Position: \n\nLat: ${cameraPosition.center
                     .latitude}\n\nLng:${cameraPosition.center
@@ -200,7 +207,7 @@ class _MyAppState extends State<MyApp> {
         toolbarActions: [new ToolbarAction("Close", 1)]);
     StreamSubscription sub = mapView.onMapReady.listen((_) {
       mapView.setMarkers(_markers);
-      mapView.setPolylines(_lines);
+//      mapView.setPolylines(_lines);
       mapView.setPolygons(_polygons);
     });
     compositeSubscription.add(sub);
